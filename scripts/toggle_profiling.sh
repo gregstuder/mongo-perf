@@ -1,0 +1,9 @@
+#!/bin/bash
+
+PROFILE_FILE="$1"
+PROFILE_PID="`cat $PROFILE_FILE.pid`"
+
+SIGNAL=23
+
+kill -$SIGNAL $PROFILE_PID
+
